@@ -245,6 +245,18 @@ section {
     color: var(--text-secondary-dark);
 }
 
+.highlight {
+    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+  }
+  
+  .dark-theme .highlight {
+    background: linear-gradient(90deg, var(--accent-dark), #57e0c9);
+  }
+
 .hero-image {
     flex: 1;
     display: flex;
