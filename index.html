@@ -3,132 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushank Jain - Portfolio</title>
+    <title>Kushank Jain | Java & AI Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">KJ</a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home">
-            <div class="container">
-                <div class="home-content">
-                    <div class="profile-photo-container">
-                        <div class="profile-photo">
-                            <img src="\image\KUSHANK formal.jpg" alt="Kushank">
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="greeting">Hi, my name is</h4>
+                    <h1 class="name">Kushank Jain.</h1>
+                    <h2 class="title">I build intelligent systems.</h2>
+                    <p class="description">
+                        I'm a Java Developer and AI/ML specialist focused on creating 
+                        impactful solutions through code and algorithms.
+                    </p>
+                    <a href="#projects" class="cta-button">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="image/KUSHANK formal.jpg" alt="Kushank Jain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a Software Engineering graduate specializing in <span class="highlight">full-stack development</span> 
+                    and <span class="highlight">machine learning systems</span>. My work focuses on building intelligent 
+                    applications that bridge the gap between cutting-edge AI research and production-ready software.
+                </p>
+                
+                <p>
+                    With hands-on experience across the entire development lifecycle, I've:
+                </p>
+                
+                <ul class="about-list">
+                    <li>
+                        <i class="fas fa-caret-right"></i>
+                        Designed and deployed scalable web applications using <span class="tech">React</span>, 
+                        <span class="tech">Node.js</span>, and cloud platforms
+                    </li>
+                    <li>
+                        <i class="fas fa-caret-right"></i>
+                        Developed production-grade ML models with <span class="tech">TensorFlow/PyTorch</span> 
+                        for computer vision and NLP tasks
+                    </li>
+                    <li>
+                        <i class="fas fa-caret-right"></i>
+                        Implemented MLOps pipelines for continuous training and deployment of AI systems
+                    </li>
+                    <li>
+                        <i class="fas fa-caret-right"></i>
+                        Optimized full-stack architectures for performance and maintainability
+                    </li>
+                </ul>
+                
+                <p>
+                    My approach combines <span class="highlight">rigorous engineering principles</span> with 
+                    <span class="highlight">data-driven decision making</span> - whether I'm designing REST APIs or 
+                    training deep learning models.
+                </p>
+            </div>
+            
+            <div class="about-image">
+                <div class="pattern-dots"></div>
+                <div class="image-wrapper">
+                    <img src="image/ai-system.jpg" alt="AI System Architecture">
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item" data-tooltip="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="Node.js">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="Python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="TensorFlow">
+                        <img src="image/tensorflow-logo.svg" alt="TensorFlow">
+                    </div>
+                    <div class="tech-item" data-tooltip="AWS">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title"><span>02.</span> Technical Skills</h2>
+        
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <div class="skill-logo" data-tooltip="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    </div>
+                    <div class="skill-logo" data-tooltip="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <div class="skill-logo" data-tooltip="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Bootstrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Spring Boot">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Express.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+                    <div class="skill-logo" data-tooltip="MongoDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                    </div>
+                    <div class="skill-logo" data-tooltip="PostgreSQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ML/AI -->
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> ML/AI</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="TensorFlow">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Keras">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Scikit-learn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Pandas">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                    </div>
+                    <div class="skill-logo" data-tooltip="NumPy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Neural Networks">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="skill-logo" data-tooltip="CNN">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-logo" data-tooltip="Git">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <div class="skill-logo" data-tooltip="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
+                    <div class="skill-logo" data-tooltip="VS Code">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    </div>
+                    <div class="skill-logo" data-tooltip="IntelliJ IDEA">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ">
+                    </div>
+                    <div class="skill-logo" data-tooltip="Jupyter Notebook">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title"><span>03.</span> Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/website.jpg" alt="Phishing Detection">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <div class="home-text">
-                        <h1>Kushank Jain</h1>
-                        <p class="tagline">Java Developer | Data Science | AI/ML Enthusiast | Problem Solver</p>
-                        <a href="#" class="cta-button" id="download-resume">Download Resume</a>
+                    <div class="project-info">
+                        <h3>Phishing Website Detection</h3>
+                        <p>
+                            AI-powered tool to identify malicious websites using machine learning algorithms 
+                            and natural language processing techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a passionate and dedicated Computer Science Engineer specializing in Artificial Intelligence and Machine Learning, with expertise in Java development, Data Science, and Mobile Application Development. My experience spans diverse projects, from building secure chat applications with AI-based monitoring to developing full-stack web solutions, showcasing my adaptability and problem-solving skills. Proficient in tools like NumPy, Pandas, Spring Boot, and Android Studio, I am committed to continuously learning and applying cutting-edge technologies to deliver impactful, real-world solutions. With a strong focus on collaboration and quality, I strive to contribute meaningfully to innovative projects.</p>
-               
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Machine Learning</li>
-                        <li>Mobile App Development</li>
-                        <li>SQL</li>
-                        <li>Data Science</li>
-                        <li>Spring Boot</li>
-                    </ul>
                 </div>
                 
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <img src="/image/website.jpg" alt="Phishing Website Detection">
-                        <h3>Phishing Website Detection</h3>
-                        <p>An AI-powered tool to identify and flag potentially malicious websites.</p>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/fire.jpeg" alt="Fire Detection">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <img src="/image/todo.png" alt="ToDo Application">
-                        <h3>ToDo Application</h3>
-                        <p>A sleek and efficient task management application to boost productivity.</p>
+                    <div class="project-info">
+                        <h3>Fire & Smoke Detection</h3>
+                        <p>
+                            Real-time computer vision system that detects fire and smoke using convolutional 
+                            neural networks and image processing.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>CNN</span>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <img src="/image/fire.jpeg" alt="Fire and Smoke Detection">
-                        <h3>Fire and Smoke Detection</h3>
-                        <p>An advanced system using computer vision to detect fire and smoke in real-time.</p>
-                    </div>
-                    <div class="project-item">
-                        <img src="/image/water.png" alt="Water Quality Treatment">
-                        <h3>Water Quality Treatment</h3>
-                        <p>An innovative solution for monitoring and improving water quality in various environments.</p>
-                    </div>
-
-                    <div class="project-item">
-                        <img src="/image/trash.webp" alt="Trash Detection and Classification">
-                        <h3>Trash Detection and Classification</h3>
-                        <p>Developed a machine learning model for detecting and classifying trash into categories such as plastic, paper, metal, and glass. Leveraged computer vision techniques to preprocess the dataset, extract features, and train the model using Convolutional Neural Networks (CNNs).</p>
-                    </div>
-
                 </div>
-                <!-- <h3>Ongoing Projects</h3> -->
-                <!-- <div class="project-grid">
-                    <div class="project-item ongoing">
-                        <img src="/image/chat.png" alt="Secure Chat Application">
-                        <h3>Secure Chat Application with AI Monitoring</h3>
-                        <p>A cutting-edge chat platform with enhanced security features and AI-based content monitoring.</p>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/trash.webp" alt="Trash Classification">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="project-item ongoing">
-                        <img src="/image/quiz.jpeg" alt="Quiz Application">
-                        <h3>Quiz Application</h3>
-                        <p>An interactive and adaptive quiz platform to facilitate learning and assessment.</p>
+                    <div class="project-info">
+                        <h3>Trash Classification</h3>
+                        <p>
+                            Machine learning model that classifies waste into categories using computer vision 
+                            and transfer learning techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>MobileNet</span>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-        </section>
+            <div class="more-projects">
+                <a href="#" class="outline-button">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form id="contact-form" action="#">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title"><span>04.</span> Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm currently looking for new opportunities in AI development and Java engineering. 
+                        Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:kushankj1203@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> kushankj1203@gmail.com
+                        </a>
+                        <a href="tel:+1234567890" class="contact-link">
+                            <i class="fas fa-phone"></i> +91 9920437109
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/kushank-jain-b41534234" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Kushank1203" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="cta-button">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Kushank Jain. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/kushank-jain-b41534234/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Kushank1203" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copy">
+                    <p>Designed & Built by Kushank Jain</p>
+                    <p>&copy; 2024 All Rights Reserved</p>
+                </div>
             </div>
         </div>
     </footer>
