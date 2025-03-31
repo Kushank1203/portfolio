@@ -32,6 +32,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     transition: all 0.3s ease;
+    padding: 70px;
 }
 
 body.dark-theme {
@@ -184,7 +185,7 @@ section {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
+    height: 104vh;
     display: flex;
     align-items: center;
 }
